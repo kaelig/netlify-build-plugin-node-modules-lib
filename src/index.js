@@ -10,7 +10,8 @@ export const onBuild = async ({ constants, utils }) => {
 
     // Install production dependencies into lib/
     try {
-      await utils.run.command(`npm install --omit=dev --prefix ${libDir} ./`);
+      await fs.copyFile(path.join('.', 'package.json'), path.join(libDir, 'package.json'));
+      await utils.run.command(`npm install --omit=dev --prefix ${libDir} ${libDir}`);
     } catch(error) {
       utils.build.failBuild('Error in copying dependencies', error)
     }
