@@ -1,6 +1,6 @@
 {
   "name": "netlify-build-plugin-node-modules-lib",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Netlify Build Plugin to deploy `node_modules` to production and redirect `node_modules` to `lib`",
   "type": "module",
   "exports": "./src/index.js",
