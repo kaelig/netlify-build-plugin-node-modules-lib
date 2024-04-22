@@ -11,6 +11,7 @@ npm install netlify-build-plugin-node-modules-lib --save-dev
 ```
 
 ```toml
+# netlify.toml
 [[plugins]]
   package = "netlify-build-plugin-node-modules-lib"
 ```
