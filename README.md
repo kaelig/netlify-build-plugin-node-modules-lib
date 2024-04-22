@@ -1,4 +1,4 @@
-Netlify Build plugin node-modules-lib - Deploys `node_modules` to production and redirects `node_modules` to `lib`.
+A Netlify Build Plugin that moves `node_modules` in a `/lib` directory, deploys them to production, and redirects requests from `node_modules` to `lib`.
 
 Based on [an original idea from Lea Verou](https://twitter.com/LeaVerou/status/1782450349368029433).
 
