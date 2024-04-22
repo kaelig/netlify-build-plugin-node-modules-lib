@@ -4,7 +4,7 @@ Based on [an original idea from Lea Verou](https://twitter.com/LeaVerou/status/1
 
 # Install
 
-Manual install the plugin:
+Manually install the plugin:
 
 ```sh
 npm install netlify-build-plugin-node-modules-lib --save-dev
