@@ -11,6 +11,7 @@ export const onBuild = async ({ constants, utils }) => {
     // Install production dependencies into lib/
     try {
       await fs.copyFile(path.join('.', 'package.json'), path.join(libDir, 'package.json'));
+      await fs.copyFile(path.join('.', 'package-lock.json'), path.join(libDir, 'package-lock.json'));
       await utils.run.command(`npm install --omit=dev --prefix ${libDir} ${libDir}`);
     } catch(error) {
       utils.build.failBuild('Error in copying dependencies', error)
