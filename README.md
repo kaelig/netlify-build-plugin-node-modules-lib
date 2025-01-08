@@ -1,4 +1,4 @@
-A Netlify Build Plugin that moves `node_modules` in a `/lib` directory, deploys them to production, and redirects requests from `node_modules` to `lib`.
+Test git auto
 
 Based on [an original idea from Lea Verou](https://twitter.com/LeaVerou/status/1782450349368029433).
 
